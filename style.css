@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+   --color-grey-700:#333333;
+   --color-grey-800:#1F1F1F;
+   --color-grey-900:#333333;
+   --white:#FFFFFF;
+   --color-green:#C4F82A;
+  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vh;
+    min-width: 384px;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 300;
+    background-color: var(--color-grey-900);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-grey-800);
+    border-radius: 12px;
+    gap: 24px;
+    padding:24px;
+
+}
+
+.avatar img {    
+    background-image: url(./assets/images/avatar-jessica.jpeg);
+    width: 88px;
+    height: 88px;
+    background-size:cover;
+    background-position: top center;
+    border-radius: 50%;
+}
+
+    .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 36px;
+    align-self: stretch
+}
+
+.address {
+    color:var(--color-green);
+    font-size:14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 21px;
+    align-self: stretch;
+}
+
+.work {
+    text-align: center;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    align-self: stretch;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+button {
+    color: var(--white);
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-700);
+    border-radius: 8px;
+    align-self: stretch;
+    border: none;
+    
+}
+
+.btn:hover {
+    color:var(--color-grey-700);
+    background-color: var(--color-green);
+    font-weight: 700;
+    transition: 0.2s ease;
+}
